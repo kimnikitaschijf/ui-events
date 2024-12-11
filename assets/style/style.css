@@ -89,28 +89,27 @@ a:nth-of-type(12) {
   }
 }
 
-/* 
-@keyframes zoom {
-  0% {
-    transform: none;
-  }
 
-  100% {
-    transform: scale(2);
-  }
-} */
-
-
-a:nth-of-type(1) {
+/* Jouw animaties */
+/* frontend knop */
+a:nth-of-type(1) { 
   transition: transform 1s;
   background-color: #7ce7c9;
   color:#050840;
 }
 
-/* Jouw animaties */
 .zoom-in {
-  /* animation: zoom 1.2s ease-in-out forwards; */
-  /* animation-name: zoom;
-  animation-duration: 1.2s; */
-  transform: scale(2);
+  transform: scale(1.5);
+}
+
+/* design knop */
+a:nth-of-type(2) {
+  background-color: #7ce7c9;
+  color:#050840;
+  transition: transform 1s;
+
+}
+
+.flip {
+  transform: rotateY(180deg);
 }
