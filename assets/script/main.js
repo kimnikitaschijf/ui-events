@@ -30,4 +30,10 @@ let design = document.querySelector('a:nth-of-type(2)')
   });
 
 
+// & knop
+let and = document.querySelector('a:nth-of-type(3)')
 
+let colorChange = function () {
+  and.classList.toggle('color-change');
+}
+and.addEventListener('click', colorChange)
