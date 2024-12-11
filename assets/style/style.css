@@ -8,9 +8,11 @@
   --pill: 2rem;
   --line: 0.1rem;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 2rem;
   padding: 0;
@@ -18,9 +20,11 @@ body {
   font-size: 2rem;
   background: var(--secondary);
 }
+
 section {
   max-width: 90vw;
 }
+
 a {
   display: inline-block;
   margin: 0.2em;
@@ -32,6 +36,7 @@ a {
   font-weight: normal;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--primary);
   border-color: var(--primary);
@@ -58,24 +63,54 @@ a:nth-of-type(12) {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
+
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
   }
+
   50% {
     transform: scale(1.05, 0.95) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
 }
 
+/* 
+@keyframes zoom {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: scale(2);
+  }
+} */
+
+
+a:nth-of-type(1) {
+  transition: transform 1s;
+  background-color: #7ce7c9;
+  color:#050840;
+}
+
 /* Jouw animaties */
+.zoom-in {
+  /* animation: zoom 1.2s ease-in-out forwards; */
+  /* animation-name: zoom;
+  animation-duration: 1.2s; */
+  transform: scale(2);
+}
