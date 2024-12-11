@@ -90,7 +90,55 @@ a:nth-of-type(12) {
 }
 
 
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+
 /* Jouw animaties */
+
 /* frontend knop */
 a:nth-of-type(1) {
   transition: transform 1s;
@@ -101,6 +149,7 @@ a:nth-of-type(1) {
 .zoom-in {
   transform: scale(1.5);
 }
+
 
 /* design knop */
 a:nth-of-type(2) {
@@ -114,6 +163,7 @@ a:nth-of-type(2) {
   transform: rotateY(180deg);
 }
 
+
 /* & knop */
 a:nth-of-type(3) {
   background-color: #7ce7c9;
@@ -124,4 +174,20 @@ a:nth-of-type(3) {
 a.color-change {
   color: #050840;
   background-color: #9d7beb;
+}
+
+
+/* development knop */
+/* & knop */
+a:nth-of-type(4) {
+  background-color: #7ce7c9;
+  color: #050840;
+  transition: transform 1s;
+}
+
+
+.shake {
+  animation-name: shake;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
 }

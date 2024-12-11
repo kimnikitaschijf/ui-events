@@ -21,13 +21,13 @@ frontend.addEventListener('click', zoomIn)
 // design knop
 let design = document.querySelector('a:nth-of-type(2)')
 
-  design.addEventListener('mouseover', () => {
-    design.classList.add('flip');
-  });
+design.addEventListener('mouseover', () => {
+  design.classList.add('flip');
+});
 
-  design.addEventListener('mouseleave', () => {
-    design.classList.remove('flip');
-  });
+design.addEventListener('mouseleave', () => {
+  design.classList.remove('flip');
+});
 
 
 // & knop
@@ -37,3 +37,20 @@ let colorChange = function () {
   and.classList.toggle('color-change');
 }
 and.addEventListener('click', colorChange)
+
+
+
+
+
+
+
+// development knop
+let development = document.querySelector('a:nth-of-type(4)')
+
+development.addEventListener('mouseover', () => {
+  development.classList.add('shake');
+});
+
+development.addEventListener('mouseleave', () => {
+  development.classList.remove('shake');
+});
