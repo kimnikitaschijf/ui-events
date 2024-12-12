@@ -39,11 +39,6 @@ let colorChange = function () {
 and.addEventListener('click', colorChange)
 
 
-
-
-
-
-
 // development knop
 let development = document.querySelector('a:nth-of-type(4)')
 
@@ -53,4 +48,17 @@ development.addEventListener('mouseover', () => {
 
 development.addEventListener('mouseleave', () => {
   development.classList.remove('shake');
+});
+
+
+
+// sprint 5 knop
+let sprint = document.querySelector('a:nth-of-type(5)')
+
+sprint.addEventListener('mouseover', () => {
+  sprint.classList.add('turn');
+});
+
+sprint.addEventListener('mouseleave', () => {
+  sprint.classList.remove('turn');
 });

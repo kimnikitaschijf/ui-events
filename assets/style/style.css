@@ -191,3 +191,15 @@ a:nth-of-type(4) {
   animation-duration: 1.2s;
   animation-iteration-count: 1;
 }
+
+/* sprint knop */
+a:nth-of-type(5) {
+  background-color: #7ce7c9;
+  color: #050840;
+  transition: transform 1s;
+
+}
+
+.turn {
+  transform: rotate(-180deg);
+}
