@@ -91,3 +91,15 @@ flow.addEventListener('mouseover', () => {
 flow.addEventListener('mouseleave', () => {
   flow.classList.remove('explode');
 });
+
+
+// user button
+let user = document.querySelector('a:nth-of-type(9)')
+
+user.addEventListener('mouseover', () => {
+  user.classList.add('jelly');
+});
+
+user.addEventListener('mouseleave', () => {
+  user.classList.remove('jelly');
+});

@@ -184,6 +184,19 @@ a:nth-of-type(12) {
   }
 }
 
+@keyframes jelly {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.7);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
 /* Jouw animaties */
 
 /* frontend knop */
@@ -290,4 +303,17 @@ a:nth-of-type(8) {
   animation-name: explode;
   animation-duration: 0.7s;
   animation-iteration-count: 1;
+}
+
+/* user knop */
+a:nth-of-type(9) {
+  background-color: #7ce7c9;
+  color: #050840;
+  transition: transform 1s;
+}
+
+.jelly {
+  animation-name: jelly;
+  animation-duration: 0.9s;
+  animation-iteration-count: 3;
 }
