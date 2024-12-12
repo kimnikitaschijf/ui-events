@@ -173,6 +173,17 @@ a:nth-of-type(12) {
 }
 
 
+@keyframes explode {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(2);
+      opacity: 0;
+  }
+}
+
 /* Jouw animaties */
 
 /* frontend knop */
@@ -264,5 +275,19 @@ a:nth-of-type(7) {
 .bounce {
   animation-name: bounce;
   animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+
+/* flow knop */
+a:nth-of-type(8) {
+  background-color: #7ce7c9;
+  color: #050840;
+  transition: transform 0.7s;
+}
+
+.explode {
+  animation-name: explode;
+  animation-duration: 0.7s;
   animation-iteration-count: 1;
 }

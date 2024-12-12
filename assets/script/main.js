@@ -79,3 +79,15 @@ let bounce = function () {
   the.classList.toggle('bounce');
 }
 the.addEventListener('click', bounce)
+
+
+// flow button
+let flow = document.querySelector('a:nth-of-type(8)')
+
+flow.addEventListener('mouseover', () => {
+  flow.classList.add('explode');
+});
+
+flow.addEventListener('mouseleave', () => {
+  flow.classList.remove('explode');
+});
