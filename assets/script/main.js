@@ -103,3 +103,16 @@ user.addEventListener('mouseover', () => {
 user.addEventListener('mouseleave', () => {
   user.classList.remove('jelly');
 });
+
+
+
+// interface button
+let interface  = document.querySelector('a:nth-of-type(10)')
+
+interface.addEventListener('mouseover', () => {
+  interface.classList.add('zigzag');
+});
+
+interface.addEventListener('mouseleave', () => {
+  interface.classList.remove('zigzag');
+});
