@@ -62,3 +62,14 @@ sprint.addEventListener('mouseover', () => {
 sprint.addEventListener('mouseleave', () => {
   sprint.classList.remove('turn');
 });
+
+
+
+// fix knop
+let fix = document.querySelector('a:nth-of-type(6)')
+
+let rainbow = function () {
+  fix.classList.toggle('rainbow');
+}
+fix.addEventListener('click', rainbow)
+

@@ -137,6 +137,39 @@ a:nth-of-type(12) {
 }
 
 
+@keyframes rainbow {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
 /* Jouw animaties */
 
 /* frontend knop */
@@ -202,4 +235,17 @@ a:nth-of-type(5) {
 
 .turn {
   transform: rotate(-180deg);
+}
+
+/* sprint knop */
+a:nth-of-type(6) {
+  background-color: #7ce7c9;
+  color: #050840;
+  transition: transform 1s;
+}
+
+.rainbow {
+  animation-name: rainbow;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
 }
