@@ -51,7 +51,6 @@ development.addEventListener('mouseleave', () => {
 });
 
 
-
 // sprint 5 knop
 let sprint = document.querySelector('a:nth-of-type(5)')
 
@@ -64,7 +63,6 @@ sprint.addEventListener('mouseleave', () => {
 });
 
 
-
 // fix knop
 let fix = document.querySelector('a:nth-of-type(6)')
 
@@ -73,3 +71,11 @@ let rainbow = function () {
 }
 fix.addEventListener('click', rainbow)
 
+
+// the button
+let the = document.querySelector('a:nth-of-type(7)')
+
+let bounce = function () {
+  the.classList.toggle('bounce');
+}
+the.addEventListener('click', bounce)

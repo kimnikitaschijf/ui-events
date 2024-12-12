@@ -160,6 +160,19 @@ a:nth-of-type(12) {
 }
 
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 /* Jouw animaties */
 
 /* frontend knop */
@@ -236,6 +249,20 @@ a:nth-of-type(6) {
 
 .rainbow {
   animation-name: rainbow;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+
+/* the knop */
+a:nth-of-type(7) {
+  background-color: #7ce7c9;
+  color: #050840;
+  transition: transform 1s;
+}
+
+.bounce {
+  animation-name: bounce;
   animation-duration: 1.2s;
   animation-iteration-count: 1;
 }
